@@ -47,8 +47,21 @@ MaverickMCP provides professional-grade financial analysis tools directly within
 - **Python 3.12+**: Core runtime environment
 - **[uv](https://docs.astral.sh/uv/)**: Modern Python package manager (recommended)
 - **TA-Lib**: Technical analysis library for advanced indicators
-- Redis (optional, for enhanced caching)
+- Redis (required, for enhanced caching)
 - PostgreSQL or SQLite (optional, for data persistence)
+
+
+#### Installint redis
+
+```bash
+sudo apt install build-essential tcl curl
+curl -O http://download.redis.io/redis-stable.tar.gz
+tar xzf redis-stable.tar.gz
+cd redis-stable
+make
+make test
+sudo make install
+```
 
 #### Installing TA-Lib
 
